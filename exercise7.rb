@@ -30,3 +30,15 @@ puts " "
 increaseamount(students)
 puts "Cohort increase by 5%:"
 displayhash(students)
+
+puts " "
+students.delete(:cohort2)
+puts "Deleted Cohort 2:"
+displayhash(students)
+
+total = 0
+students.each do |x,y|
+  total = total + y.to_i
+end
+puts " "
+puts "Total number of sudents is #{total}."
