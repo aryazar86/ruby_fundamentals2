@@ -12,7 +12,7 @@ def searcharray(array, what)
   end
 end
 
-grocery_list = ["beets", "toilet paper", "apples", "chicken"]
+grocery_list = ["beets", "toilet paper", "apples", "chicken", "salmon"]
 
 puts "My grocery list is:"
 putsarray(grocery_list)
@@ -34,3 +34,14 @@ puts " "
 
 puts "The second item of the list is #{grocery_list[1]}."
 
+puts " "
+
+puts "Grocery list organized alphabetically is:"
+putsarray(grocery_list.sort!)
+
+puts " "
+
+grocery_list.delete("salmon")
+
+puts "Grocery list without salmon is:"
+putsarray(grocery_list)
